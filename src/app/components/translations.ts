@@ -330,7 +330,7 @@ export const translations = {
         {
           school: "National Polytechnic Institute Félix Houphouët-Boigny",
           degree: "Surveying Degree",
-          spec: "Senior Surveyor-Topographer Technician — Honors",
+          spec: "Senior Surveyor-Topographer Technician",
           location: "Yamoussoukro, Ivory Coast",
           period: "Oct. 2019 – Jul. 2022",
           logo: "/logo/inphb.png",

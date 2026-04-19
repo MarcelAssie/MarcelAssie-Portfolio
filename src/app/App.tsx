@@ -72,7 +72,7 @@ export default function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme, isDark }}>
         <div
           className={`min-h-screen transition-colors duration-500 ${
-            isDark ? "bg-[#0a0a0f] text-white" : "bg-[#f8f9fc] text-gray-900"
+            isDark ? "bg-[#0a0a0f] text-white" : "bg-[#f3f6fb] text-slate-800"
           }`}
         >
           <Navbar activeSection={activeSection} />

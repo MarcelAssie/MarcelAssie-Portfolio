@@ -49,14 +49,14 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className={isDark ? "text-gray-400" : "text-gray-600"} style={{ fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "2rem" }}>
+            <p className={isDark ? "text-gray-400" : "text-slate-600"} style={{ fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "2rem" }}>
               {t.contact.subtitle}
             </p>
 
             <div className="space-y-4">
               <a
                 href="mailto:marcelassie2k@gmail.com"
-                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-gray-700 hover:text-[#0d9488]"}`}
+                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-slate-700 hover:text-[#0d9488]"}`}
                 style={{ fontSize: "0.9rem" }}
               >
                 <Mail size={18} style={{ color: c }} />
@@ -66,7 +66,7 @@ export function ContactSection() {
                 href="https://linkedin.com/in/marcel-assie"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-gray-700 hover:text-[#0d9488]"}`}
+                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-slate-700 hover:text-[#0d9488]"}`}
                 style={{ fontSize: "0.9rem" }}
               >
                 <Linkedin size={18} style={{ color: c }} />
@@ -76,7 +76,7 @@ export function ContactSection() {
                 href="https://github.com/MarcelAssie/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-gray-700 hover:text-[#0d9488]"}`}
+                className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-slate-700 hover:text-[#0d9488]"}`}
                 style={{ fontSize: "0.9rem" }}
               >
                 <Github size={18} style={{ color: c }} />
@@ -93,7 +93,7 @@ export function ContactSection() {
             className="space-y-5"
           >
             <div>
-              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-gray-600"}`} style={{ fontSize: "0.85rem" }}>
+              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-slate-600"}`} style={{ fontSize: "0.85rem" }}>
                 {t.contact.nameLabel}
               </label>
               <input
@@ -103,13 +103,13 @@ export function ContactSection() {
                 className={`w-full px-4 py-3 rounded-lg transition-all focus:outline-none ${
                   isDark
                     ? "bg-white/[0.05] border border-white/10 text-white placeholder-gray-600 focus:border-[#64ffda]/40"
-                    : "bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-[#0d9488]/40"
+                    : "bg-white/85 border border-slate-200/80 text-slate-900 placeholder-slate-400 focus:border-[#0d9488]/45"
                 }`}
-                style={{ fontSize: "0.9rem" }}
+                style={{ fontSize: "0.9rem", boxShadow: isDark ? "none" : "0 10px 30px -22px rgba(15,23,42,0.45)" }}
               />
             </div>
             <div>
-              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-gray-600"}`} style={{ fontSize: "0.85rem" }}>
+              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-slate-600"}`} style={{ fontSize: "0.85rem" }}>
                 {t.contact.emailLabel}
               </label>
               <input
@@ -119,13 +119,13 @@ export function ContactSection() {
                 className={`w-full px-4 py-3 rounded-lg transition-all focus:outline-none ${
                   isDark
                     ? "bg-white/[0.05] border border-white/10 text-white placeholder-gray-600 focus:border-[#64ffda]/40"
-                    : "bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-[#0d9488]/40"
+                    : "bg-white/85 border border-slate-200/80 text-slate-900 placeholder-slate-400 focus:border-[#0d9488]/45"
                 }`}
-                style={{ fontSize: "0.9rem" }}
+                style={{ fontSize: "0.9rem", boxShadow: isDark ? "none" : "0 10px 30px -22px rgba(15,23,42,0.45)" }}
               />
             </div>
             <div>
-              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-gray-600"}`} style={{ fontSize: "0.85rem" }}>
+              <label className={`block mb-1.5 ${isDark ? "text-gray-400" : "text-slate-600"}`} style={{ fontSize: "0.85rem" }}>
                 {t.contact.messageLabel}
               </label>
               <textarea
@@ -135,9 +135,9 @@ export function ContactSection() {
                 className={`w-full px-4 py-3 rounded-lg resize-none transition-all focus:outline-none ${
                   isDark
                     ? "bg-white/[0.05] border border-white/10 text-white placeholder-gray-600 focus:border-[#64ffda]/40"
-                    : "bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-[#0d9488]/40"
+                    : "bg-white/85 border border-slate-200/80 text-slate-900 placeholder-slate-400 focus:border-[#0d9488]/45"
                 }`}
-                style={{ fontSize: "0.9rem" }}
+                style={{ fontSize: "0.9rem", boxShadow: isDark ? "none" : "0 10px 30px -22px rgba(15,23,42,0.45)" }}
               />
             </div>
             <button
@@ -146,8 +146,9 @@ export function ContactSection() {
               style={{
                 fontSize: "0.9rem",
                 fontWeight: 600,
-                color: isDark ? "#0a0a0f" : "#fff",
+                color: isDark ? "#0a0a0f" : "#ffffff",
                 background: c,
+                boxShadow: isDark ? "none" : "0 14px 30px -18px rgba(13,148,136,0.55)",
               }}
             >
               <SubmitIcon size={18} />

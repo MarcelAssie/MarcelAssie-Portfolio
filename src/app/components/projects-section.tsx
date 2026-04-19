@@ -8,7 +8,7 @@ export function ProjectsSection() {
   const c = isDark ? "#64ffda" : "#0d9488";
 
   return (
-    <section id="projects" className={`py-24 px-6 ${isDark ? "bg-white/[0.01]" : "bg-gray-50/50"}`}>
+    <section id="projects" className={`py-24 px-6 ${isDark ? "bg-white/[0.01]" : "bg-white/45"}`}>
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={t.projects.title} />
 
@@ -23,16 +23,16 @@ export function ProjectsSection() {
               className={`p-5 rounded-xl transition-all group flex flex-col ${
                 isDark
                   ? "bg-white/[0.03] border border-white/5 hover:border-[#64ffda]/20"
-                  : "bg-white border border-gray-200 hover:border-[#0d9488]/30 shadow-sm"
+                  : "bg-white/88 border border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_14px_30px_-22px_rgba(15,23,42,0.5)]"
               }`}
             >
               <h4
-                className={`mb-3 transition-colors ${isDark ? "text-white group-hover:text-[#64ffda]" : "text-gray-900 group-hover:text-[#0d9488]"}`}
+                className={`mb-3 transition-colors ${isDark ? "text-white group-hover:text-[#64ffda]" : "text-slate-900 group-hover:text-[#0d9488]"}`}
                 style={{ fontSize: "1rem", fontWeight: 600 }}
               >
                 {p.name}
               </h4>
-              <p className={`flex-1 mb-4 ${isDark ? "text-gray-400" : "text-gray-600"}`} style={{ fontSize: "0.85rem", lineHeight: 1.7 }}>
+              <p className={`flex-1 mb-4 ${isDark ? "text-gray-400" : "text-slate-600"}`} style={{ fontSize: "0.85rem", lineHeight: 1.7 }}>
                 {p.description}
               </p>
               <div className="flex flex-wrap gap-1.5">

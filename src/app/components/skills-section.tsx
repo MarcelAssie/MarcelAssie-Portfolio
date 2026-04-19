@@ -27,12 +27,12 @@ export function SkillsSection() {
                 className={`p-5 rounded-xl transition-all ${
                   isDark
                     ? "bg-white/[0.03] border border-white/5 hover:border-[#64ffda]/20"
-                    : "bg-white border border-gray-200 hover:border-[#0d9488]/30 shadow-sm"
+                    : "bg-white/88 border border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_14px_30px_-22px_rgba(15,23,42,0.5)]"
                 }`}
               >
                 <div className="flex items-center gap-2 mb-4">
                   <Icon size={18} style={{ color: c }} />
-                  <h3 className={isDark ? "text-white" : "text-gray-900"} style={{ fontSize: "1rem", fontWeight: 600 }}>
+                  <h3 className={isDark ? "text-white" : "text-slate-900"} style={{ fontSize: "1rem", fontWeight: 600 }}>
                     {cat.name}
                   </h3>
                 </div>
@@ -43,7 +43,7 @@ export function SkillsSection() {
                       className={`px-3 py-1.5 rounded-lg cursor-default transition-all ${
                         isDark
                           ? "bg-white/[0.05] text-gray-300 border border-white/5 hover:border-[#64ffda]/20 hover:text-[#64ffda]"
-                          : "bg-gray-50 text-gray-700 border border-gray-200 hover:border-[#0d9488]/30 hover:text-[#0d9488]"
+                          : "bg-white text-slate-700 border border-slate-200/80 hover:border-[#0d9488]/35 hover:text-[#0d9488]"
                       }`}
                       style={{ fontSize: "0.82rem" }}
                     >

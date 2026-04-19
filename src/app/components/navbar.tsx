@@ -39,7 +39,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
       className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b transition-colors duration-500 ${
         isDark
           ? "bg-[#0a0a0f]/80 border-white/5"
-          : "bg-white/80 border-gray-200"
+          : "bg-white/70 border-slate-200/70 shadow-[0_8px_30px_-20px_rgba(15,23,42,0.45)]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
@@ -61,10 +61,10 @@ export function Navbar({ activeSection }: { activeSection: string }) {
                 activeSection === l.id
                   ? isDark
                     ? "text-[#64ffda] bg-[#64ffda]/10"
-                    : "text-[#0d9488] bg-[#0d9488]/10"
+                    : "text-[#0d9488] bg-[#0d9488]/12"
                   : isDark
                   ? "text-gray-400 hover:text-white"
-                  : "text-gray-500 hover:text-gray-900"
+                  : "text-slate-500 hover:text-slate-900 hover:bg-slate-100/70"
               }`}
               style={{ fontSize: "0.85rem" }}
             >
@@ -78,7 +78,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
             className={`ml-2 p-2 rounded-md transition-all ${
               isDark
                 ? "text-gray-400 hover:text-[#64ffda] hover:bg-[#64ffda]/10"
-                : "text-gray-500 hover:text-[#0d9488] hover:bg-[#0d9488]/10"
+                : "text-slate-500 hover:text-[#0d9488] hover:bg-slate-100/80"
             }`}
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
@@ -86,11 +86,13 @@ export function Navbar({ activeSection }: { activeSection: string }) {
 
           <button
             onClick={toggleLang}
-            className="ml-2 flex items-center gap-1.5 px-3 py-1.5 rounded-md border transition-all"
+            className={`ml-2 flex items-center gap-1.5 px-3 py-1.5 rounded-md border transition-all ${
+              isDark ? "hover:bg-[#64ffda]/5" : "hover:bg-[#0d9488]/5"
+            }`}
             style={{
               fontSize: "0.85rem",
               color: c,
-              borderColor: isDark ? "rgba(100,255,218,0.3)" : "rgba(13,148,136,0.3)",
+              borderColor: isDark ? "rgba(100,255,218,0.3)" : "rgba(13,148,136,0.25)",
             }}
           >
             <Globe size={14} />
@@ -103,18 +105,20 @@ export function Navbar({ activeSection }: { activeSection: string }) {
           <button
             onClick={toggleTheme}
             className={`p-1.5 rounded transition-all ${
-              isDark ? "text-gray-400" : "text-gray-500"
+              isDark ? "text-gray-400" : "text-slate-500 hover:bg-slate-100/80"
             }`}
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
           <button
             onClick={toggleLang}
-            className="flex items-center gap-1 px-2 py-1 rounded border"
+            className={`flex items-center gap-1 px-2 py-1 rounded border transition-all ${
+              isDark ? "" : "hover:bg-[#0d9488]/5"
+            }`}
             style={{
               fontSize: "0.8rem",
               color: c,
-              borderColor: isDark ? "rgba(100,255,218,0.3)" : "rgba(13,148,136,0.3)",
+              borderColor: isDark ? "rgba(100,255,218,0.3)" : "rgba(13,148,136,0.25)",
             }}
           >
             <Globe size={13} />
@@ -122,7 +126,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`p-1 ${isDark ? "text-white" : "text-gray-900"}`}
+            className={`p-1 ${isDark ? "text-white" : "text-slate-800"}`}
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -139,7 +143,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
             className={`lg:hidden backdrop-blur-xl border-b overflow-hidden transition-colors ${
               isDark
                 ? "bg-[#0a0a0f]/95 border-white/5"
-                : "bg-white/95 border-gray-200"
+                : "bg-white/90 border-slate-200/70"
             }`}
           >
             <div className="px-4 py-4 flex flex-col gap-1">
@@ -151,10 +155,10 @@ export function Navbar({ activeSection }: { activeSection: string }) {
                     activeSection === l.id
                       ? isDark
                         ? "text-[#64ffda] bg-[#64ffda]/10"
-                        : "text-[#0d9488] bg-[#0d9488]/10"
+                        : "text-[#0d9488] bg-[#0d9488]/12"
                       : isDark
                       ? "text-gray-400 hover:text-white"
-                      : "text-gray-500 hover:text-gray-900"
+                      : "text-slate-500 hover:text-slate-900 hover:bg-slate-100/70"
                   }`}
                   style={{ fontSize: "0.9rem" }}
                 >

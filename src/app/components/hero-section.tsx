@@ -65,7 +65,6 @@ export function HeroSection() {
   const typedText = useTypewriter(specialties, 70, 35, 2200);
 
   const c = isDark ? "#64ffda" : "#0d9488";
-  const bg = isDark ? "#0a0a0f" : "#f8f9fc";
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -75,26 +74,26 @@ export function HeroSection() {
         style={{
           background: isDark
             ? "linear-gradient(to bottom right, #0a0a0f, #0d1117, #0a0a0f)"
-            : "linear-gradient(to bottom right, #f8f9fc, #eef2f7, #f8f9fc)",
+            : "radial-gradient(circle at top left, #ffffff 0%, #f3f6fb 45%, #eef3f9 100%)",
         }}
       />
       <div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl"
-        style={{ background: isDark ? "rgba(100,255,218,0.05)" : "rgba(13,148,136,0.06)" }}
+        style={{ background: isDark ? "rgba(100,255,218,0.05)" : "rgba(13,148,136,0.08)" }}
       />
       <div
         className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl"
-        style={{ background: isDark ? "rgba(124,58,237,0.05)" : "rgba(124,58,237,0.04)" }}
+        style={{ background: isDark ? "rgba(124,58,237,0.05)" : "rgba(37,99,235,0.06)" }}
       />
 
       {/* Grid */}
       <div
         className="absolute inset-0"
         style={{
-          opacity: isDark ? 0.03 : 0.06,
+          opacity: isDark ? 0.03 : 0.04,
           backgroundImage: isDark
             ? "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)"
-            : "linear-gradient(rgba(0,0,0,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.06) 1px, transparent 1px)",
+            : "linear-gradient(rgba(15,23,42,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,.06) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
@@ -106,16 +105,16 @@ export function HeroSection() {
         transition={{ delay: 1.2 }}
         className="hidden lg:flex fixed left-8 bottom-0 flex-col items-center gap-5 z-50"
       >
-        <a href="mailto:marcelassie2k@gmail.com" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
+        <a href="mailto:marcelassie2k@gmail.com" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
           <Mail size={20} />
         </a>
-        <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
+        <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
           <Linkedin size={20} />
         </a>
-        <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
+        <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
           <Github size={20} />
         </a>
-        <div className={`w-px h-24 ${isDark ? "bg-gray-600" : "bg-gray-300"}`} />
+        <div className={`w-px h-24 ${isDark ? "bg-gray-600" : "bg-slate-300"}`} />
       </motion.div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -133,7 +132,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className={isDark ? "text-white" : "text-gray-900"}
+          className={isDark ? "text-white" : "text-slate-900"}
           style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "1rem" }}
         >
           {t.hero.name}
@@ -143,7 +142,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className={isDark ? "text-gray-400" : "text-gray-500"}
+          className={isDark ? "text-gray-400" : "text-slate-600"}
           style={{ fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", fontWeight: 400, lineHeight: 1.4, marginBottom: "1.5rem" }}
         >
           {t.hero.title}
@@ -156,7 +155,7 @@ export function HeroSection() {
           transition={{ delay: 0.8 }}
           className="mb-10 h-8 flex items-center justify-center"
         >
-          <span className={isDark ? "text-gray-500" : "text-gray-400"} style={{ fontSize: "0.95rem", marginRight: "0.375rem" }}>
+          <span className={isDark ? "text-gray-500" : "text-slate-500"} style={{ fontSize: "0.95rem", marginRight: "0.375rem" }}>
             {lang === "fr" ? "Spécialisé en" : "Specialized in"}
           </span>
           <span style={{ fontSize: "0.95rem", fontWeight: 500, color: c }}>
@@ -176,13 +175,13 @@ export function HeroSection() {
           transition={{ delay: 0.9 }}
           className="flex lg:hidden items-center justify-center gap-5 mb-8"
         >
-          <a href="mailto:marcelassie2k@gmail.com" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
+          <a href="mailto:marcelassie2k@gmail.com" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} transition-colors`}>
             <Mail size={20} />
           </a>
-          <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
+          <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} transition-colors`}>
             <Linkedin size={20} />
           </a>
-          <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
+          <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} transition-colors`}>
             <Github size={20} />
           </a>
         </motion.div>
@@ -199,8 +198,9 @@ export function HeroSection() {
             style={{
               fontSize: "0.9rem",
               color: c,
-              background: isDark ? "rgba(100,255,218,0.1)" : "rgba(13,148,136,0.08)",
+              background: isDark ? "rgba(100,255,218,0.1)" : "rgba(255,255,255,0.7)",
               border: `1px solid ${isDark ? "rgba(100,255,218,0.3)" : "rgba(13,148,136,0.25)"}`,
+              boxShadow: isDark ? "none" : "0 10px 30px -20px rgba(15,23,42,0.5)",
             }}
           >
             {t.hero.cta}
@@ -212,8 +212,9 @@ export function HeroSection() {
             style={{
               fontSize: "0.9rem",
               fontWeight: 600,
-              color: isDark ? "#0a0a0f" : "#fff",
+              color: isDark ? "#0a0a0f" : "#ffffff",
               background: c,
+              boxShadow: isDark ? "none" : "0 14px 30px -18px rgba(13,148,136,0.55)",
             }}
           >
             <Download size={16} />
@@ -228,8 +229,8 @@ export function HeroSection() {
         transition={{ repeat: Infinity, duration: 2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <div className={`w-5 h-8 rounded-full border-2 flex justify-center pt-1.5 ${isDark ? "border-gray-600" : "border-gray-300"}`}>
-          <div className={`w-1 h-2 rounded-full ${isDark ? "bg-gray-500" : "bg-gray-400"}`} />
+        <div className={`w-5 h-8 rounded-full border-2 flex justify-center pt-1.5 ${isDark ? "border-gray-600" : "border-slate-300"}`}>
+          <div className={`w-1 h-2 rounded-full ${isDark ? "bg-gray-500" : "bg-slate-400"}`} />
         </div>
       </motion.div>
     </section>

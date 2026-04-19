@@ -11,7 +11,7 @@ export function EducationSection() {
   const c = isDark ? "#64ffda" : "#0d9488";
 
   return (
-    <section id="education" className={`py-28 px-6 ${isDark ? "bg-white/[0.01]" : "bg-gray-50/50"}`}>
+    <section id="education" className={`py-28 px-6 ${isDark ? "bg-white/[0.01]" : "bg-white/45"}`}>
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={t.education.title} />
         <div className="mt-12 space-y-0 relative">
@@ -20,7 +20,7 @@ export function EducationSection() {
             style={{
               background: isDark
                 ? "linear-gradient(to bottom, rgba(100,255,218,0.4), rgba(100,255,218,0.2), transparent)"
-                : "linear-gradient(to bottom, rgba(13,148,136,0.4), rgba(13,148,136,0.2), transparent)",
+                : "linear-gradient(to bottom, rgba(13,148,136,0.45), rgba(56,189,248,0.28), transparent)",
             }}
           />
 
@@ -47,7 +47,7 @@ export function EducationSection() {
                 className={`flex-1 p-6 rounded-xl transition-all group ${
                   isDark
                     ? "bg-white/[0.03] border border-white/5 hover:border-[#64ffda]/20"
-                    : "bg-white border border-gray-200 hover:border-[#0d9488]/30 shadow-sm"
+                    : "bg-white/88 border border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_14px_35px_-24px_rgba(15,23,42,0.55)]"
                 }`}
               >
                 <div className="flex items-start gap-4">
@@ -55,7 +55,7 @@ export function EducationSection() {
                     <a href={item.url} target="_blank" rel="noopener noreferrer" className="shrink-0 hidden sm:block">
                       <div
                         className={`w-14 h-14 rounded-xl p-2 flex items-center justify-center overflow-hidden transition-all ${
-                          isDark ? "bg-white/10 group-hover:bg-white/15" : "bg-gray-100 group-hover:bg-gray-200"
+                          isDark ? "bg-white/10 group-hover:bg-white/15" : "bg-slate-100 group-hover:bg-slate-200"
                         }`}
                       >
                         <ImageWithFallback src={item.logo} alt={item.school} className="w-full h-full object-contain" />
@@ -65,11 +65,11 @@ export function EducationSection() {
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
-                      <h3 className={isDark ? "text-white" : "text-gray-900"} style={{ fontSize: "1.05rem", fontWeight: 600, lineHeight: 1.4 }}>
+                      <h3 className={isDark ? "text-white" : "text-slate-900"} style={{ fontSize: "1.05rem", fontWeight: 600, lineHeight: 1.4 }}>
                         {item.school}
                       </h3>
                       {item.url && (
-                        <a href={item.url} target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-600 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors shrink-0 mt-0.5`}>
+                        <a href={item.url} target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-600 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} transition-colors shrink-0 mt-0.5`}>
                           <ExternalLink size={14} />
                         </a>
                       )}
@@ -77,10 +77,10 @@ export function EducationSection() {
                     <p className="mt-1" style={{ fontSize: "0.9rem", color: c }}>
                       {item.degree}
                     </p>
-                    <p className={isDark ? "text-gray-400" : "text-gray-500"} style={{ fontSize: "0.85rem", marginTop: "0.125rem" }}>
+                    <p className={isDark ? "text-gray-400" : "text-slate-600"} style={{ fontSize: "0.85rem", marginTop: "0.125rem" }}>
                       {item.spec}
                     </p>
-                    <div className={`flex flex-wrap gap-4 mt-3 ${isDark ? "text-gray-500" : "text-gray-400"}`} style={{ fontSize: "0.8rem" }}>
+                    <div className={`flex flex-wrap gap-4 mt-3 ${isDark ? "text-gray-500" : "text-slate-500"}`} style={{ fontSize: "0.8rem" }}>
                       <span className="inline-flex items-center gap-1.5">
                         <MapPin size={12} /> {item.location}
                       </span>

@@ -24,7 +24,7 @@ const cvs =[
   const codeSourceUrl = "https://github.com/MarcelAssie/MarcelAssie-CV";
 
   return (
-    <section id="cv" className={`py-28 px-6 ${isDark ? "bg-white/[0.01]" : "bg-gray-50/50"}`}>
+    <section id="cv" className={`py-28 px-6 ${isDark ? "bg-white/[0.01]" : "bg-white/45"}`}>
       <div className="max-w-5xl mx-auto">
         <SectionTitle title={t.cv.title} />
 
@@ -44,10 +44,10 @@ const cvs =[
                 cv.primary
                   ? isDark
                     ? "bg-[#64ffda]/5 border-[#64ffda]/20 hover:border-[#64ffda]/40"
-                    : "bg-[#0d9488]/5 border-[#0d9488]/20 hover:border-[#0d9488]/40"
+                    : "bg-[#0d9488]/7 border-[#0d9488]/22 hover:border-[#0d9488]/40"
                   : isDark
                   ? "bg-white/[0.03] border-white/5 hover:border-[#64ffda]/20"
-                  : "bg-white border-gray-200 hover:border-[#0d9488]/30 shadow-sm"
+                  : "bg-white/88 border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_14px_30px_-22px_rgba(15,23,42,0.5)]"
               }`}
             >
               <div
@@ -55,13 +55,13 @@ const cvs =[
                 style={{
                   background: cv.primary
                     ? isDark ? "rgba(100,255,218,0.15)" : "rgba(13,148,136,0.12)"
-                    : isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.04)",
+                    : isDark ? "rgba(255,255,255,0.06)" : "rgba(15,23,42,0.04)",
                 }}
               >
                 <FileDown size={24} style={{ color: c }} />
               </div>
               <h3
-                className={`text-center ${isDark ? "text-white" : "text-gray-900"}`}
+                className={`text-center ${isDark ? "text-white" : "text-slate-900"}`}
                 style={{ fontSize: "1rem", fontWeight: 600, lineHeight: 1.4 }}
               >
                 {cv.title}
@@ -81,7 +81,7 @@ const cvs =[
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className={`mt-8 text-center ${isDark ? "text-gray-500" : "text-gray-500"}`}
+          className={`mt-8 text-center ${isDark ? "text-gray-500" : "text-slate-500"}`}
           style={{ fontSize: "0.85rem", lineHeight: 1.7 }}
         >
           {lang === "fr"

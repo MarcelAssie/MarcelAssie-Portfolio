@@ -28,10 +28,10 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="md:col-span-3 space-y-6"
           >
-            <p className={isDark ? "text-gray-300" : "text-gray-700"} style={{ fontSize: "0.95rem", lineHeight: 1.9 }}>
+            <p className={isDark ? "text-gray-300" : "text-slate-700"} style={{ fontSize: "0.95rem", lineHeight: 1.9 }}>
               {t.about.p1}
             </p>
-            <p className={isDark ? "text-gray-400" : "text-gray-600"} style={{ fontSize: "0.95rem", lineHeight: 1.9 }}>
+            <p className={isDark ? "text-gray-400" : "text-slate-600"} style={{ fontSize: "0.95rem", lineHeight: 1.9 }}>
               {t.about.p2}
             </p>
           </motion.div>
@@ -47,7 +47,7 @@ export function AboutSection() {
                 className={`flex items-center gap-3 p-3.5 rounded-xl backdrop-blur-sm transition-all ${
                   isDark
                     ? "bg-white/[0.04] border border-white/5 hover:border-[#64ffda]/20"
-                    : "bg-white border border-gray-200 hover:border-[#0d9488]/30 shadow-sm"
+                    : "bg-white/85 border border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_10px_25px_-18px_rgba(15,23,42,0.45)]"
                 }`}
               >
                 <div
@@ -56,7 +56,7 @@ export function AboutSection() {
                 >
                   <item.icon size={16} style={{ color: c }} />
                 </div>
-                <span className={isDark ? "text-gray-300" : "text-gray-700"} style={{ fontSize: "0.85rem", lineHeight: 1.5 }}>
+                <span className={isDark ? "text-gray-300" : "text-slate-700"} style={{ fontSize: "0.85rem", lineHeight: 1.5 }}>
                   {item.label}
                 </span>
               </motion.div>
@@ -79,7 +79,7 @@ export function SectionTitle({ title }: { title: string }) {
       className="flex items-center gap-4 mb-2"
     >
       <h2
-        className={`shrink-0 ${isDark ? "text-white" : "text-gray-900"}`}
+        className={`shrink-0 ${isDark ? "text-white" : "text-slate-900"}`}
         style={{ fontSize: "1.8rem", fontWeight: 700, letterSpacing: "-0.02em" }}
       >
         {title}
@@ -89,7 +89,7 @@ export function SectionTitle({ title }: { title: string }) {
         style={{
           background: isDark
             ? "linear-gradient(to right, rgba(100,255,218,0.3), transparent)"
-            : "linear-gradient(to right, rgba(13,148,136,0.3), transparent)",
+            : "linear-gradient(to right, rgba(13,148,136,0.4), rgba(56,189,248,0.18), transparent)",
         }}
       />
     </motion.div>
