@@ -112,7 +112,7 @@ export function HeroSection() {
         <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
           <Linkedin size={20} />
         </a>
-        <a href="https://github.com/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
+        <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} hover:-translate-y-1 transition-all`}>
           <Github size={20} />
         </a>
         <div className={`w-px h-24 ${isDark ? "bg-gray-600" : "bg-gray-300"}`} />
@@ -182,7 +182,7 @@ export function HeroSection() {
           <a href="https://linkedin.com/in/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
             <Linkedin size={20} />
           </a>
-          <a href="https://github.com/marcel-assie" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
+          <a href="https://github.com/MarcelAssie/" target="_blank" rel="noopener noreferrer" className={`${isDark ? "text-gray-500 hover:text-[#64ffda]" : "text-gray-400 hover:text-[#0d9488]"} transition-colors`}>
             <Github size={20} />
           </a>
         </motion.div>

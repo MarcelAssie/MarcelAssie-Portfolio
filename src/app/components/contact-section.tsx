@@ -51,7 +51,7 @@ export function ContactSection() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/marcel-assie"
+                href="https://github.com/MarcelAssie/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center gap-3 transition-colors ${isDark ? "text-gray-300 hover:text-[#64ffda]" : "text-gray-700 hover:text-[#0d9488]"}`}
