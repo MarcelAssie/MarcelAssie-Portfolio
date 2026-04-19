@@ -75,7 +75,7 @@ export const translations = {
         {
           school: "Institut National Polytechnique Félix Houphouët-Boigny",
           degree: "Licence Géomètre",
-          spec: "Technicien Supérieur Géomètre-Topographe — Mention Bien",
+          spec: "Technicien Supérieur Géomètre-Topographe",
           location: "Yamoussoukro, Côte d'Ivoire",
           period: "Oct. 2019 – Juil. 2022",
           logo: "/logo/inphb.png",
@@ -84,7 +84,7 @@ export const translations = {
         {
           school: "Lycée Scientifique de Yamoussoukro",
           degree: "Baccalauréat, Série Scientifique",
-          spec: "Mention Assez Bien",
+          spec: "Physiques & Mathématiques",
           location: "Yamoussoukro, Côte d'Ivoire",
           period: "Sept. 2016 – Juil. 2019",
           logo: "logo/lsy.png",
@@ -339,7 +339,7 @@ export const translations = {
         {
           school: "Scientific High School of Yamoussoukro",
           degree: "Scientific Baccalaureate",
-          spec: "With Honors",
+          spec: "Physics & Maths",
           location: "Yamoussoukro, Ivory Coast",
           period: "Sept. 2016 – Jul. 2019",
           logo: "logo/lsy.png",
