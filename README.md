@@ -13,7 +13,7 @@ Ce portfolio est conçu comme une application web performante et élégante, met
 -  **Projets** : Une vitrine interactive de mes réalisations avec des descriptions détaillées.
 -  **CV & Contact** : Une intégration fluide pour consulter mon CV et me contacter directement.
 -  **Bilingue** : Support français-anglais pour une portée internationale.
--  **Mode Sombre/Clair** : Adaptation automatique ou manuelle au thème préféré de l'utilisateur.
+-  **Mode Sombre/Clair** : Adaptation manuelle au thème préféré de l'utilisateur.
 
 ## Technologies utilisées
 

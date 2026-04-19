@@ -12,16 +12,16 @@ export function CVSection() {
 const cvs =[
     {
       title: lang === "fr" ? "Curriculum Vitae (Version française)" : "Curriculum Vitae (French version)",
-      href: "/Marcel_Assie_CV_FR.pdf",
+      href: "/resume/Marcel_Assie_CV_FR.pdf",
       primary: true,
     },
     {
       title: lang === "fr" ? "Curriculum Vitae (English version)" : "Curriculum Vitae (English version)",
-      href: "/Marcel_Assie_CV_EN.pdf",
+      href: "/resume/Marcel_Assie_CV_EN.pdf",
       primary: false,
     },
   ];
-  const codeSourceUrl = "https://github.com/marcel-assie/portfolio";
+  const codeSourceUrl = "https://github.com/MarcelAssie/MarcelAssie-CV";
 
   return (
     <section id="cv" className={`py-28 px-6 ${isDark ? "bg-white/[0.01]" : "bg-gray-50/50"}`}>

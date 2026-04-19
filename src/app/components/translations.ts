@@ -64,13 +64,13 @@ export const translations = {
       title: "Formation",
       items: [
         {
-          school: "École Nationale des Sciences Géographiques (Geodata Paris)",
+          school: "École Nationale des Sciences Géographiques (Actuel Geodata Paris)",
           degree: "Ingénieur en Géomatique",
           spec: "Spécialité Geo Data Science",
           location: "Champs-sur-Marne, France",
           period: "Sept. 2023 – Sept. 2026",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_ENSG_G%C3%A9omatique.svg/1200px-Logo_ENSG_G%C3%A9omatique.svg.png",
-          url: "https://ensg.eu/",
+          logo: "logo/ensg.jpg",
+          url: "https://geodata-paris.fr/fr",
         },
         {
           school: "Institut National Polytechnique Félix Houphouët-Boigny",
@@ -78,8 +78,8 @@ export const translations = {
           spec: "Technicien Supérieur Géomètre-Topographe — Mention Bien",
           location: "Yamoussoukro, Côte d'Ivoire",
           period: "Oct. 2019 – Juil. 2022",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/0/0d/Logo_inphb.png",
-          url: "https://inphb.ci/",
+          logo: "/logo/inphb.png",
+          url: "https://inphb.edu.ci/",
         },
         {
           school: "Lycée Scientifique de Yamoussoukro",
@@ -87,8 +87,8 @@ export const translations = {
           spec: "Mention Assez Bien",
           location: "Yamoussoukro, Côte d'Ivoire",
           period: "Sept. 2016 – Juil. 2019",
-          logo: "",
-          url: "",
+          logo: "logo/lsy.png",
+          url: "https://lsy.ci/",
         },
       ] as EducationItem[],
     },
@@ -100,7 +100,7 @@ export const translations = {
           role: "Ingénieur Développeur SIG — Alternance",
           location: "Paris, France",
           period: "Sept. 2025 – Sept. 2026",
-          logo: "https://pbs.twimg.com/profile_images/1137012892090597377/e3cMvph4_400x400.png",
+          logo: "/logo/isogeo.png",
           url: "https://www.isogeo.com/",
           description:
             "Dans le cadre de mon alternance chez Isogeo, éditeur spécialisé dans le catalogage et la gestion de métadonnées géographiques, j'interviens sur la refonte technologique du « Scan Isogeo ». Cet outil central permet de recenser automatiquement les données géographiques d'un client (fichiers SIG, bases de données spatiales, services web) et d'en extraire les métadonnées descriptives. L'objectif est de remplacer l'ETL propriétaire FME par de nouvelles chaînes de traitements automatisées, plus performantes et maintenables.",
@@ -118,8 +118,8 @@ export const translations = {
           role: "Ingénieur Geo Data Scientist — Stage",
           location: "Lille, France",
           period: "Avr. – Août 2025",
-          logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFMbLvJ_FvMeQ/company-logo_200_200/company-logo_200_200/0/1719392777498/oryjin_logo?e=2147483647&v=beta&t=3qFOYYwR70M02LOldqvNcUqUH6wXGkCiJUw1DWtCU3M",
-          url: "https://oryjin.com/",
+          logo: "/logo/oryjin.jpg",
+          url: "https://www.oryjin.ai/",
           description:
             "Stage de 5 mois au sein d'Oryjin, startup spécialisée en intelligence géospatiale et ciblage territorial. J'ai contribué au développement d'une plateforme digitale de ciblage reposant sur l'index géospatial open source H3 (Uber). Cette plateforme permet aux clients (retailers, collectivités) d'exploiter des données socio-démographiques et géographiques pour optimiser leur implantation et leurs campagnes marketing locales.",
           tasks: [
@@ -136,7 +136,7 @@ export const translations = {
           role: "Ingénieur Géomaticien — Stage",
           location: "Forcalquier, France",
           period: "Mai – Juil. 2024",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Logo_IGN_2012.svg/1200px-Logo_IGN_2012.svg.png",
+          logo: "/logo/ign.png",
           url: "https://www.ign.fr/",
           description:
             "Stage de terrain au sein de l'IGN dans le cadre de la formation ENSG. Réalisation de mini-projets appliqués mobilisant l'ensemble des compétences géomatiques fondamentales. Ce stage intensif m'a permis de consolider mes acquis terrain et de développer un workflow de cartographie automatisé pour les services de la préfecture.",
@@ -186,8 +186,8 @@ export const translations = {
           role: "Stage de Projet de Fin d'Études",
           location: "Abidjan, Côte d'Ivoire",
           period: "Mars – Juin 2022",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/b/bf/Logo_Vinci.svg/1200px-Logo_Vinci.svg.png",
-          url: "https://www.sogea-satom.com/",
+          logo: "/logo/sogea-satom.png",
+          url: "https://sogea-satom.com/fr/",
           description:
             "Stage de fin d'études au sein de SOGEA-SATOM, filiale du groupe VINCI, sur le chantier majeur de réhabilitation de la décharge d'Akouédo (plus grande décharge d'Afrique de l'Ouest). Réalisation des travaux topographiques nécessaires à la construction du réseau d'assainissement et de drainage des eaux.",
           tasks: [
@@ -324,8 +324,8 @@ export const translations = {
           spec: "Specialization in Geo Data Science",
           location: "Champs-sur-Marne, France",
           period: "Sept. 2023 – Sept. 2026",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_ENSG_G%C3%A9omatique.svg/1200px-Logo_ENSG_G%C3%A9omatique.svg.png",
-          url: "https://ensg.eu/",
+          logo: "logo/ensg.jpg",
+          url: "https://geodata-paris.fr/fr",
         },
         {
           school: "National Polytechnic Institute Félix Houphouët-Boigny",
@@ -333,8 +333,8 @@ export const translations = {
           spec: "Senior Surveyor-Topographer Technician — Honors",
           location: "Yamoussoukro, Ivory Coast",
           period: "Oct. 2019 – Jul. 2022",
-          logo: "https://upload.wikimedia.org/wikipedia/fr/0/0d/Logo_inphb.png",
-          url: "https://inphb.ci/",
+          logo: "/logo/inphb.png",
+          url: "https://inphb.edu.ci/",
         },
         {
           school: "Scientific High School of Yamoussoukro",
@@ -342,8 +342,8 @@ export const translations = {
           spec: "With Honors",
           location: "Yamoussoukro, Ivory Coast",
           period: "Sept. 2016 – Jul. 2019",
-          logo: "",
-          url: "",
+          logo: "logo/lsy.png",
+          url: "https://lsy.ci/",
         },
       ] as EducationItem[],
     },
@@ -352,13 +352,13 @@ export const translations = {
       items: [
         {
           company: "ISOGEO",
-          role: "GIS Development Engineer — Work-Study",
+          role: "GIS Development Engineer — Apprenticeship",
           location: "Paris, France",
           period: "Sept. 2025 – Sept. 2026",
-          logo: "https://pbs.twimg.com/profile_images/1137012892090597377/e3cMvph4_400x400.png",
+          logo: "/logo/isogeo.png",
           url: "https://www.isogeo.com/",
           description:
-            "As part of my work-study at Isogeo, a company specialized in cataloguing and managing geographic metadata, I work on the technological overhaul of the \"Scan Isogeo\". This core tool automatically inventories a client's geographic data (GIS files, spatial databases, web services) and extracts descriptive metadata. The goal is to replace the proprietary FME ETL with new, more performant and maintainable automated processing chains.",
+            "As part of my apprenticeship at Isogeo, a company specialized in cataloguing and managing geographic metadata, I work on the technological overhaul of the \"Scan Isogeo\". This core tool automatically inventories a client's geographic data (GIS files, spatial databases, web services) and extracts descriptive metadata. The goal is to replace the proprietary FME ETL with new, more performant and maintainable automated processing chains.",
           tasks: [
             "Designing and developing new ETL chains in Python to fully replace FME, with automated processing orchestration",
             "Handling and processing various geographic data formats (Shapefile, GeoPackage, GeoJSON, GeoTIFF, PostGIS databases, WMS/WFS services) with GDAL/OGR and SQL",
@@ -373,8 +373,8 @@ export const translations = {
           role: "Geo Data Scientist Engineer — Internship",
           location: "Lille, France",
           period: "Apr. – Aug. 2025",
-          logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFMbLvJ_FvMeQ/company-logo_200_200/company-logo_200_200/0/1719392777498/oryjin_logo?e=2147483647&v=beta&t=3qFOYYwR70M02LOldqvNcUqUH6wXGkCiJUw1DWtCU3M",
-          url: "https://oryjin.com/",
+          logo: "/logo/oryjin.jpg",
+          url: "https://www.oryjin.ai/",
           description:
             "5-month internship at Oryjin, a startup specialized in geospatial intelligence and territorial targeting. I contributed to developing a digital targeting platform based on the open-source geospatial index H3 (Uber). This platform enables clients (retailers, municipalities) to leverage socio-demographic and geographic data to optimize their location strategy and local marketing campaigns.",
           tasks: [
