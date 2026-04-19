@@ -11,12 +11,12 @@ export function CVSection() {
   const cvs = [
     {
       title: lang === "fr" ? "Curriculum Vitae (Version française)" : "Curriculum Vitae (French version)",
-      href: "/src/imports/Marcel_Assie_CV_FR.pdf",
+      href: "/src/assets/Marcel_Assie_CV_FR.pdf",
       primary: true,
     },
     {
       title: lang === "fr" ? "Curriculum Vitae (English version)" : "Curriculum Vitae (English version)",
-      href: "/src/imports/Marcel_Assie_CV_EN.pdf",
+      href: "/src/assets/Marcel_Assie_CV_EN.pdf",
       primary: false,
     },
   ];
