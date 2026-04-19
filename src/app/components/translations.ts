@@ -52,8 +52,8 @@ export const translations = {
     },
     about: {
       title: "À propos de moi",
-      p1: "Ingénieur géomaticien spécialisé en Geo Data Science, passionné par l'écosystème Geo-Data et les technologies géospatiales. Fort d'un parcours riche alliant topographie de terrain et ingénierie des données spatiales, je mets à profit mes compétences en développement géospatial, automatisation de pipelines de données et analyse spatiale.",
-      p2: "Mon objectif : transformer des données territoriales complexes en véritables outils décisionnels, au service de projets à fort impact. Ayant le sens du professionnalisme, je sais travailler en équipe et sous pression. Grâce à mon esprit critique, je suis une force de proposition et un véritable atout dans la conduite de projet.",
+      p1: "Ingénieur géomaticien spécialisé en Geo Data Science, passionné par l'écosystème Geo-Data et les technologies géospatiales. Fort d'un parcours riche alliant amenagement du terrain et ingénierie des données spatiales, je mets à profit mes compétences en développement géospatial, automatisation de pipelines de données et analyse spatiale.",
+      p2: "Mon objectif : transformer des données géolocalisées complexes en véritables outils décisionnels, au service de projets à fort impact. Ayant le sens du professionnalisme, je sais travailler en équipe et avec rigueur. Grâce à mon esprit critique, je suis une force de proposition et un véritable atout dans la conduite de projet.",
       location: "Champs-sur-Marne (77), France",
       email: "marcelassie2k@gmail.com",
       phone: "+33 7 68 06 25 78",
