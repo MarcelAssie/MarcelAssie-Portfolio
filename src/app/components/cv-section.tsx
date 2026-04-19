@@ -3,24 +3,24 @@ import { SectionTitle } from "./about-section";
 import { motion } from "motion/react";
 import { FileDown, ExternalLink, Code } from "lucide-react";
 
+
 export function CVSection() {
   const { lang, t } = useLang();
   const { isDark } = useTheme();
   const c = isDark ? "#64ffda" : "#0d9488";
 
-  const cvs = [
+const cvs =[
     {
       title: lang === "fr" ? "Curriculum Vitae (Version française)" : "Curriculum Vitae (French version)",
-      href: "/src/assets/Marcel_Assie_CV_FR.pdf",
+      href: "/Marcel_Assie_CV_FR.pdf",
       primary: true,
     },
     {
       title: lang === "fr" ? "Curriculum Vitae (English version)" : "Curriculum Vitae (English version)",
-      href: "/src/assets/Marcel_Assie_CV_EN.pdf",
+      href: "/Marcel_Assie_CV_EN.pdf",
       primary: false,
     },
   ];
-
   const codeSourceUrl = "https://github.com/marcel-assie/portfolio";
 
   return (
