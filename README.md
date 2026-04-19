@@ -2,7 +2,11 @@
 
 Un portfolio personnel **moderne**, **interactif** et **entièrement responsive** conçu pour présenter mes projets, mes compétences et mon parcours professionnel de manière dynamique.
 
+
 ![Page d'accueil Portfolio - Marcel Assie](src/assets/home_screen.png)
+
+>[!Note]
+> Vous pouvez consulter le portfolio en ligne sur : [Marcel Assie Portfolio](https://marcel-assie.dev)
 
 ## À propos du projet
 
@@ -40,6 +44,3 @@ npm run dev
 ```
 
 Une fois lancé, accédez au projet via [http://localhost:5173](http://localhost:5173).
-
->[!Note]
-> Vous pouvez consulter le portfolio en ligne sur : [Marcel Assie Portfolio](https://marcel-assie.dev)

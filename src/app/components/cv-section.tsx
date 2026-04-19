@@ -1,7 +1,7 @@
 import { useLang, useTheme } from "../App";
 import { SectionTitle } from "./about-section";
 import { motion } from "motion/react";
-import { FileDown, ExternalLink, Code } from "lucide-react";
+import { FileDown, ExternalLink } from "lucide-react";
 
 
 export function CVSection() {
@@ -91,10 +91,9 @@ const cvs =[
             href={codeSourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 hover:underline"
+            className="inline align-baseline hover:underline"
             style={{ color: c }}
           >
-            <Code size={13} />
             {lang === "fr" ? "ici" : "here"}
           </a>
           .

@@ -9,11 +9,33 @@ export function ContactSection() {
   const { isDark } = useTheme();
   const [sent, setSent] = useState(false);
   const c = isDark ? "#64ffda" : "#0d9488";
+  const submitText = sent ? t.contact.sent || "Message envoyé !" : t.contact.send;
+  const SubmitIcon = sent ? CheckCircle : Send;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mojywpek", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setSent(true); // Affiche le bouton de succès
+        form.reset(); // Vide les champs du formulaire
+        setTimeout(() => setSent(false), 3000); // Remet le bouton normal après 3s
+      } else {
+        alert("Oups ! Une erreur est survenue lors de l'envoi de votre message.");
+      }
+    } catch (error) {
+      alert("Erreur de connexion. Veuillez réessayer plus tard.");
+    }
   };
 
   return (
@@ -76,6 +98,7 @@ export function ContactSection() {
               </label>
               <input
                 type="text"
+                name="name" // Ajout de l'attribut name
                 required
                 className={`w-full px-4 py-3 rounded-lg transition-all focus:outline-none ${
                   isDark
@@ -91,6 +114,7 @@ export function ContactSection() {
               </label>
               <input
                 type="email"
+                name="email" // Ajout de l'attribut name
                 required
                 className={`w-full px-4 py-3 rounded-lg transition-all focus:outline-none ${
                   isDark
@@ -105,6 +129,7 @@ export function ContactSection() {
                 {t.contact.messageLabel}
               </label>
               <textarea
+                name="message" // Ajout de l'attribut name
                 required
                 rows={5}
                 className={`w-full px-4 py-3 rounded-lg resize-none transition-all focus:outline-none ${
@@ -125,15 +150,8 @@ export function ContactSection() {
                 background: c,
               }}
             >
-              {sent ? (
-                <>
-                  <CheckCircle size={18} /> {t.contact.sent}
-                </>
-              ) : (
-                <>
-                  <Send size={18} /> {t.contact.send}
-                </>
-              )}
+              <SubmitIcon size={18} />
+              <span key={sent ? "sent" : "send"}>{submitText}</span>
             </button>
           </motion.form>
         </div>
