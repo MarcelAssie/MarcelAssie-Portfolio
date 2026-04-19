@@ -27,6 +27,7 @@ export interface ProjectItem {
   type: string;
   description: string;
   tags: string[];
+  url?: string;
 }
 
 export const translations = {
@@ -106,12 +107,12 @@ export const translations = {
             "Dans le cadre de mon alternance chez Isogeo, éditeur spécialisé dans le catalogage et la gestion de métadonnées géographiques, j'interviens sur la refonte technologique du « Scan Isogeo ». Cet outil central permet de recenser automatiquement les données géographiques d'un client (fichiers SIG, bases de données spatiales, services web) et d'en extraire les métadonnées descriptives. L'objectif est de remplacer l'ETL propriétaire FME par de nouvelles chaînes de traitements automatisées, plus performantes et maintenables.",
           tasks: [
             "Conception et développement de nouvelles chaînes ETL en Python pour le remplacement complet de FME, avec orchestration automatisée des traitements",
-            "Manipulation et traitement de formats de données géographiques variés (Shapefile, GeoPackage, GeoJSON, GeoTIFF, bases PostGIS, services WMS/WFS) avec GDAL/OGR et SQL",
-            "Exploration et implémentation de modèles d'IA (NLP) pour l'extraction et l'enrichissement automatique des métadonnées sémantiques à partir des noms de couches et attributs",
+            "Manipulation et traitement de formats de données géographiques variés (Shapefile, GeoPackage, GeoJSON, Raster, CAO, bases Oracle, and more) avec GDAL/OGR et SQL",
+            "Exploration et implémentation de modèles d'IA pour l'extraction et l'enrichissement automatique des métadonnées sémantiques à partir des noms de couches et attributs",
             "Rédaction de spécifications fonctionnelles et techniques ; gestion de projet en méthode Agile (Scrum) avec sprints bi-hebdomadaires",
-            "Mise en place de tests unitaires et d'intégration, documentation technique et revue de code collaborative",
+            "Mise en place de tests de non regression, de performances et documentation technique",
           ],
-          tags: ["Python", "GDAL/OGR", "SQL", "Node.js", "IA/NLP", "Agile/Scrum", "Docker"],
+          tags: ["Python", "GDAL/OGR", "SQL", "IA", "Agile/Scrum", "Docker"],
         },
         {
           company: "ORYJIN",
@@ -210,6 +211,7 @@ export const translations = {
           description:
             "Développement d'une méthode avancée d'extraction d'informations basée sur les Grands Modèles de Langage (LLM). Structuration des résultats sous forme de graphes de connaissances (Neo4j) pour analyser les relations sémantiques entre les 17 Objectifs de Développement Durable de l'ONU et leurs cibles.",
           tags: ["Pytorch", "Transformers", "NLP", "LLMs", "Neo4j"],
+          url: "https://github.com/MarcelAssie/PIR18",
         },
         {
           name: "App mobile de navigation (Gendarmerie Nationale)",
@@ -217,6 +219,7 @@ export const translations = {
           description:
             "Développement d'une application mobile de navigation inspirée de Waze, spécifiquement conçue pour les missions de sécurité publique de la Gendarmerie Nationale. Fonctionnalités de signalement en temps réel, optimisation d'itinéraires tactiques et alertes géolocalisées.",
           tags: ["React Native", "Flask", "API REST", "Géolocalisation"],
+          url: "https://github.com/WYBG/PDI-APP-Nav-WAZE",
         },
         {
           name: "Étude Spatio-Statistique (Île-de-France)",
@@ -224,6 +227,7 @@ export const translations = {
           description:
             "Modélisation de l'impact des modifications du réseau de transport francilien (nouvelles lignes, prolongements) sur le report modal domicile-travail via une approche panel spatio-temporelle. Simulation de scénarios prospectifs et visualisation cartographique des résultats.",
           tags: ["Scikit-Learn", "Seaborn", "SciPy", "Proj", "GeoPandas"],
+          url: "https://github.com/MarcelAssie/SpatialAnalysisProject",
         },
         {
           name: "Plateforme SaaS KlassIvoire",
@@ -231,13 +235,15 @@ export const translations = {
           description:
             "Contribution au développement d'une plateforme de suivi scolaire numérique à destination des établissements ivoiriens. Intégration d'outils d'IA (Gemini API) pour l'analyse automatique des performances, la génération de bulletins et les recommandations pédagogiques personnalisées.",
           tags: ["Django", "PostgreSQL", "Docker", "Cloudflare R2", "Redis", "Gemini API"],
+          url: "https://klassivoire.kaedys.com/",
         },
         {
           name: "Plateforme d'analyse d'établissements scolaires",
           type: "personal",
           description:
             "Conception d'une plateforme intelligente de suivi géographique des établissements scolaires, permettant l'exploitation de données spatiales (localisation, accessibilité, zonage) pour la prise de décision en matière de politique éducative.",
-          tags: ["Django", "PostgreSQL/PostGIS", "Leaflet.js", "API REST"],
+          tags: ["Django", "PostgreSQL/PostGIS", "Leaflet.js", "Vue.js", "LLaMa(Meta)", "Geoserver"],
+          url: "https://github.com/MarcelAssie/SIGWEB",
         },
       ] as ProjectItem[],
     },
@@ -330,7 +336,7 @@ export const translations = {
         {
           school: "National Polytechnic Institute Félix Houphouët-Boigny",
           degree: "Surveying Degree",
-          spec: "Senior Surveyor-Topographer Technician",
+          spec: "Surveyor-Topographer Technician",
           location: "Yamoussoukro, Ivory Coast",
           period: "Oct. 2019 – Jul. 2022",
           logo: "/logo/inphb.png",
@@ -361,12 +367,12 @@ export const translations = {
             "As part of my apprenticeship at Isogeo, a company specialized in cataloguing and managing geographic metadata, I work on the technological overhaul of the \"Scan Isogeo\". This core tool automatically inventories a client's geographic data (GIS files, spatial databases, web services) and extracts descriptive metadata. The goal is to replace the proprietary FME ETL with new, more performant and maintainable automated processing chains.",
           tasks: [
             "Designing and developing new ETL chains in Python to fully replace FME, with automated processing orchestration",
-            "Handling and processing various geographic data formats (Shapefile, GeoPackage, GeoJSON, GeoTIFF, PostGIS databases, WMS/WFS services) with GDAL/OGR and SQL",
-            "Exploring and implementing AI (NLP) models for automatic metadata extraction and semantic enrichment from layer names and attributes",
+            "Handling and processing various geographic data formats (Shapefile, GeoPackage, GeoJSON, Raste, Oracle databases, and more) with GDAL/OGR and SQL",
+            "Exploring and implementing AI models for automatic metadata extraction and semantic enrichment from layer names and attributes",
             "Writing functional and technical specifications; Agile (Scrum) project management with bi-weekly sprints",
-            "Setting up unit and integration tests, technical documentation and collaborative code review",
+            "Setting up non regression and performances tests and technical documentation",
           ],
-          tags: ["Python", "GDAL/OGR", "SQL", "Node.js", "AI/NLP", "Agile/Scrum", "Docker"],
+          tags: ["Python", "GDAL/OGR", "SQL", "AI", "Agile/Scrum", "Docker"],
         },
         {
           company: "ORYJIN",
@@ -465,6 +471,7 @@ export const translations = {
           description:
             "Development of an advanced information extraction method based on Large Language Models (LLM). Structuring results as knowledge graphs (Neo4j) to analyze semantic relationships between the 17 UN Sustainable Development Goals and their targets.",
           tags: ["Pytorch", "Transformers", "NLP", "LLMs", "Neo4j"],
+          url: "https://github.com/MarcelAssie/PIR18",
         },
         {
           name: "Navigation Mobile App (French Gendarmerie)",
@@ -472,6 +479,7 @@ export const translations = {
           description:
             "Development of a Waze-inspired mobile navigation application specifically designed for public security missions of the French Gendarmerie. Real-time reporting features, tactical route optimization and geolocated alerts.",
           tags: ["React Native", "Flask", "REST API", "Geolocation"],
+          url: "https://github.com/WYBG/PDI-APP-Nav-WAZE",
         },
         {
           name: "Spatio-Statistical Study (Île-de-France)",
@@ -479,6 +487,7 @@ export const translations = {
           description:
             "Modeling the impact of Paris region transport network changes (new lines, extensions) on home-work modal shift using a spatio-temporal panel approach. Prospective scenario simulation and cartographic visualization of results.",
           tags: ["Scikit-Learn", "Seaborn", "SciPy", "Proj", "GeoPandas"],
+          url: "https://github.com/MarcelAssie/SpatialAnalysisProject",
         },
         {
           name: "SaaS Platform KlassIvoire",
@@ -486,13 +495,15 @@ export const translations = {
           description:
             "Contributing to the development of a digital school monitoring platform for Ivorian institutions. Integration of AI tools (Gemini API) for automatic performance analysis, report card generation and personalized pedagogical recommendations.",
           tags: ["Django", "PostgreSQL", "Docker", "Cloudflare R2", "Redis", "Gemini API"],
+          url: "https://klassivoire.kaedys.com/",
         },
         {
           name: "School Analysis Platform",
           type: "personal",
           description:
             "Design of an intelligent geographic monitoring platform for schools, enabling the exploitation of spatial data (location, accessibility, zoning) for educational policy decision-making.",
-          tags: ["Django", "PostgreSQL/PostGIS", "Leaflet.js", "REST API"],
+          tags: ["Django", "PostgreSQL/PostGIS", "Leaflet.js", "Vue.js", "LLaMa(Meta)", "Geoserver"],
+          url: "https://github.com/MarcelAssie/SIGWEB",
         },
       ] as ProjectItem[],
     },

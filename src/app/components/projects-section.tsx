@@ -1,7 +1,8 @@
 import { useLang, useTheme } from "../App";
 import { SectionTitle } from "./about-section";
 import { motion } from "motion/react";
-
+import { Github } from "lucide-react";
+import { Globe } from "lucide-react";
 export function ProjectsSection() {
   const { t } = useLang();
   const { isDark } = useTheme();
@@ -13,7 +14,10 @@ export function ProjectsSection() {
         <SectionTitle title={t.projects.title} />
 
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {t.projects.items.map((p, i) => (
+          {t.projects.items.map((p, i) => {
+            const isKlassivoire = /klassivoire/i.test(p.name) || /klassivoire/i.test(p.url || "");
+
+            return (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -26,12 +30,25 @@ export function ProjectsSection() {
                   : "bg-white/88 border border-slate-200/80 hover:border-[#0d9488]/35 shadow-[0_14px_30px_-22px_rgba(15,23,42,0.5)]"
               }`}
             >
-              <h4
-                className={`mb-3 transition-colors ${isDark ? "text-white group-hover:text-[#64ffda]" : "text-slate-900 group-hover:text-[#0d9488]"}`}
-                style={{ fontSize: "1rem", fontWeight: 600 }}
-              >
-                {p.name}
-              </h4>
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <h4
+                  className={`flex-1 transition-colors ${isDark ? "text-white group-hover:text-[#64ffda]" : "text-slate-900 group-hover:text-[#0d9488]"}`}
+                  style={{ fontSize: "1rem", fontWeight: 600 }}
+                >
+                  {p.name}
+                </h4>
+                {p.url && (
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${isDark ? "text-gray-600 hover:text-[#64ffda]" : "text-slate-400 hover:text-[#0d9488]"} transition-colors shrink-0 mt-0.5`}
+                    title={isKlassivoire ? p.name : `View ${p.name} on GitHub`}
+                  >
+                    {isKlassivoire ? <Globe size={16} /> : <Github size={16} />}
+                  </a>
+                )}
+              </div>
               <p className={`flex-1 mb-4 ${isDark ? "text-gray-400" : "text-slate-600"}`} style={{ fontSize: "0.85rem", lineHeight: 1.7 }}>
                 {p.description}
               </p>
@@ -52,7 +69,8 @@ export function ProjectsSection() {
                 ))}
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
