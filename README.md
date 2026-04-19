@@ -2,7 +2,7 @@
 
 Un portfolio personnel **moderne**, **interactif** et **entièrement responsive** conçu pour présenter mes projets, mes compétences et mon parcours professionnel de manière dynamique.
 
-![Page d'accueil Portfolio - Marcel Assie](src/imports/home_screen.png)
+![Page d'accueil Portfolio - Marcel Assie](src/assets/home_screen.png)
 
 ## À propos du projet
 
