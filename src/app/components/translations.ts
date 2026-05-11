@@ -107,12 +107,12 @@ export const translations = {
             "Dans le cadre de mon alternance chez Isogeo, éditeur spécialisé dans le catalogage et la gestion de métadonnées géographiques, j'interviens sur la refonte technologique du « Scan Isogeo ». Cet outil central permet de recenser automatiquement les données géographiques d'un client (fichiers SIG, bases de données spatiales, services web) et d'en extraire les métadonnées descriptives. L'objectif est de remplacer l'ETL propriétaire FME par de nouvelles chaînes de traitements automatisées, plus performantes et maintenables.",
           tasks:[
             "Conception et développement de nouvelles chaînes ETL en Python pour le remplacement complet de FME, avec orchestration automatisée des traitements",
-            "Manipulation et traitement de formats de données géographiques variés (Shapefile, GeoPackage, GeoJSON, Raster, CAO, bases Oracle, et plus) avec GDAL/OGR et SQL",
+            "Développement de modules d'extraction et de traitement pour divers SGBD (Oracle, SQL Server) et formats géographiques (GeoPackage, GeoParquet, fichiers CAO) via GDAL et SQL",
             "Exploration et implémentation de modèles d'IA pour l'extraction et l'enrichissement automatique des métadonnées sémantiques à partir des noms de couches et attributs",
             "Rédaction de spécifications fonctionnelles et techniques ; gestion de projet en méthode Agile (Scrum) avec sprints",
             "Mise en place de tests de non regression, de performances et documentation technique",
           ],
-          tags:["Python", "GDAL/OGR", "SQL", "IA", "Agile/Scrum", "Docker"],
+          tags:["Python", "GDAL/OGR", "SQL Server", "GeoParquet", "IA", "Agile/Scrum", "Docker"],
         },
         {
           company: "ORYJIN",
@@ -248,30 +248,34 @@ export const translations = {
       ] as ProjectItem[],
     },
     skills: {
-      title: "Compétences",
-      categories:[
-        {
-          name: "Langages",
-          items: ["Python", "SQL", "JavaScript", "HTML/CSS", "R", "Cypher"],
-        },
-        {
-          name: "Technologies",
-          items:["Docker", "GitHub", "PostgreSQL/PostGIS", "Django", "Flask", "Vue.js", "React Native", "Neo4j"],
-        },
-        {
-          name: "Librairies Géospatiales",
-          items:["GDAL/OGR", "Proj", "GeoPandas", "ArcPy", "PyQGIS", "Shapely", "Leaflet.js", "Rasterio"],
-        },
-        {
-          name: "Outils SIG",
-          items:["QGIS", "ArcGIS Pro", "FME", "GeoServer", "AutoCAD", "Covadis"],
-        },
-        {
-          name: "Aptitudes",
-          items:["Adaptabilité", "Rigueur", "Esprit critique", "Prise d'initiative", "Travail en équipe", "Méthode Agile"],
-        },
-      ],
+  title: "Compétences",
+  categories:[
+    {
+      name: "Langages",
+      items:["Python", "SQL", "JavaScript", "HTML/CSS", "R", "Cypher"],
     },
+    {
+      name: "Bases de données",
+      items:["PostgreSQL/PostGIS", "Oracle Spatial", "SQL Server", "Neo4j"],
+    },
+    {
+      name: "Web & Ops",
+      items:["Docker", "GitHub", "Django", "Flask", "Vue.js", "React Native"],
+    },
+    {
+      name: "Librairies SIG",
+      items:["GDAL/OGR", "Proj", "GeoPandas", "ArcPy", "PyQGIS", "Shapely", "Leaflet.js", "Rasterio"],
+    },
+    {
+      name: "Outils & Formats",
+      items:["QGIS", "ArcGIS Pro", "FME", "GeoServer", "AutoCAD", "Covadis", "GeoParquet", "GeoPackage", "CAO/DAO"],
+    },
+    {
+      name: "Aptitudes",
+      items:["Adaptabilité", "Rigueur", "Esprit critique", "Prise d'initiative", "Travail en équipe", "Méthode Agile"],
+    },
+  ],
+},
     cv: {
       title: "Mon CV",
       downloadMain: "Télécharger CV Ingénieur Géomatique",
@@ -357,23 +361,23 @@ export const translations = {
       title: "Professional Experience",
       items:[
         {
-          company: "ISOGEO",
-          role: "GIS Software Engineer — Apprenticeship",
-          location: "Paris, France",
-          period: "Sept. 2025 – Sept. 2026",
-          logo: "/logo/isogeo.png",
-          url: "https://www.isogeo.com/",
-          description:
-            "During my apprenticeship at Isogeo—a software publisher specializing in geographic metadata cataloging—I am leading the technological overhaul of 'Scan Isogeo'. This core solution automatically inventories clients' geographic data (GIS files, spatial databases, web services) and extracts descriptive metadata. The objective is to replace the proprietary FME ETL with new, highly performant, and maintainable automated processing pipelines.",
-          tasks:[
-            "Designing and developing new Python-based ETL pipelines to fully replace FME, featuring automated processing orchestration",
-            "Manipulating and processing diverse geographic data formats (Shapefile, GeoPackage, GeoJSON, Raster, CAD, Oracle databases, etc.) using GDAL/OGR and SQL",
-            "Exploring and implementing AI models to automatically extract and semantically enrich metadata based on layer names and attributes",
-            "Drafting functional and technical specifications; participating in Agile (Scrum) project management with sprints",
-            "Implementing non-regression and performance testing, and authoring comprehensive technical documentation",
-          ],
-          tags:["Python", "GDAL/OGR", "SQL", "AI", "Agile/Scrum", "Docker"],
-        },
+  company: "ISOGEO",
+  role: "GIS Software Engineer — Apprenticeship",
+  location: "Paris, France",
+  period: "Sept. 2025 – Sept. 2026",
+  logo: "/logo/isogeo.png",
+  url: "https://www.isogeo.com/",
+  description:
+    "During my apprenticeship at Isogeo—a software publisher specializing in geographic metadata cataloging—I am leading the technological overhaul of 'Scan Isogeo'. This core solution automatically inventories clients' geographic data (GIS files, spatial databases, web services) and extracts descriptive metadata. The objective is to replace the proprietary FME ETL with new, highly performant, and maintainable automated processing pipelines.",
+  tasks:[
+    "Designing and developing new Python-based ETL pipelines to fully replace FME, featuring automated processing orchestration",
+    "Developing extraction and processing modules for various RDBMS (Oracle, SQL Server) and modern geographic formats (GeoPackage, GeoParquet, CAD files) leveraging GDAL and SQL",
+    "Exploring and implementing AI models to automatically extract and semantically enrich metadata based on layer names and attributes",
+    "Drafting functional and technical specifications; participating in Agile (Scrum) project management with sprints",
+    "Implementing non-regression and performance testing, and authoring comprehensive technical documentation",
+  ],
+  tags:["Python", "GDAL/OGR", "SQL Server", "GeoParquet", "AI", "Agile/Scrum", "Docker"],
+},
         {
           company: "ORYJIN",
           role: "Geospatial Data Scientist — Internship",
@@ -515,16 +519,20 @@ export const translations = {
           items:["Python", "SQL", "JavaScript", "HTML/CSS", "R", "Cypher"],
         },
         {
-          name: "Technologies",
-          items:["Docker", "GitHub", "PostgreSQL/PostGIS", "Django", "Flask", "Vue.js", "React Native", "Neo4j"],
+          name: "Databases",
+          items:["PostgreSQL/PostGIS", "Oracle Spatial", "SQL Server", "Neo4j"],
+        },
+        {
+          name: "Web Tech & Ops",
+          items:["Docker", "GitHub", "Django", "Flask", "Vue.js", "React Native"],
         },
         {
           name: "Geospatial Libraries",
           items:["GDAL/OGR", "Proj", "GeoPandas", "ArcPy", "PyQGIS", "Shapely", "Leaflet.js", "Rasterio"],
         },
         {
-          name: "GIS Tools",
-          items:["QGIS", "ArcGIS Pro", "FME", "GeoServer", "AutoCAD", "Covadis"],
+          name: "Tools & Formats",
+          items:["QGIS", "ArcGIS Pro", "FME", "GeoServer", "AutoCAD", "Covadis", "GeoParquet", "GeoPackage", "CAD"],
         },
         {
           name: "Soft Skills",
